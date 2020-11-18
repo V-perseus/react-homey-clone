@@ -19,10 +19,12 @@ const Styles = styled.div`
 function Banner() {
   return (
     <Styles>
-        <Navbar collapseOnSelect expand="lg" variant="dark">
+        <Navbar collapseOnSelect expand="lg" variant="dark" className="navbar">
           <Container>
             <Navbar.Brand href="#home">Homey</Navbar.Brand>
-              <Nav className="ml-auto d-flex">
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+              <Nav className="ml-auto">
                 <Nav.Link href="#features">Features</Nav.Link>
                 <Nav.Link href="#pricing">Pricing</Nav.Link>
                 <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
@@ -39,6 +41,7 @@ function Banner() {
                     </Nav.Link>
                 </Nav>
               </Nav>
+            </Navbar.Collapse>
           </Container>
       </Navbar>
     </Styles>
