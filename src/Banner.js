@@ -1,7 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Navbar, NavDropdown, Nav, Container, Button} from 'react-bootstrap'
-import './Navbar.css';
+import {Navbar, NavDropdown, Nav, Container} from 'react-bootstrap'
 import styled from 'styled-components';
 
 const Styles = styled.div`
@@ -11,7 +10,7 @@ const Styles = styled.div`
   .navbar-brand, .navbar-nav, .nav-link {
     color: #bbb;
     &:hover {
-      color: black;
+      color: yellow;
     }
   }
 `;
@@ -19,7 +18,7 @@ const Styles = styled.div`
 function Banner() {
   return (
     <Styles>
-        <Navbar collapseOnSelect expand="lg" variant="dark" className="navbar">
+        <Navbar sticky="top" collapseOnSelect expand="lg" variant="dark" className="navbar">
           <Container>
             <Navbar.Brand href="#home">Homey</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
