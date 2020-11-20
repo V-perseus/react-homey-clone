@@ -34,8 +34,10 @@ function Background1() {
             <Jumbo fluid className="jumbo">
                 <div className="overlay"></div>
                 <Container>
-                    <h1>Welcome to Mango Jam's React Homey</h1>
-                    <p>You can see my skills here.</p>
+                    <Row>
+                        <h1>Welcome to Mango Jam's React Homey</h1>
+                        <p>You can see my skills here.</p>
+                    </Row>
                 </Container>
             </Jumbo>
         </Styles>
