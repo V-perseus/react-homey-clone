@@ -5,42 +5,23 @@ import styled from 'styled-components';
 import {Row} from 'react-bootstrap'
 
 const Styles = styled.div`
-    .jumbo {
-        background: url(${dogImage}) no-repeat;
-        background-size: 100% 100%;
-        color:yellow;
-        height: 200px;
-        position: relative;
-        z-index: -2;
-    }
-    .overlay {
-        background-color: #000;
-        opacity: 0.2;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        z-index: -1;
-    }
     
 `;
 
-function Background1() {
+function Detail() {
     return (
         <Styles>
-            <Jumbo fluid className="jumbo">
-                <div className="overlay"></div>
+            
                 <Container>
-                    <Row>
+                    <Row className="row">
                         <h1>Greeting of the link 345</h1>
-                        
+                        <p>Hello residents, this apartment has now opened an apartment application service to offer better life. We will make apartments better only for residents with transparency and sincerity. We hope that new service will get close to all residents as quickly as possible. And resident can also communicate each other more than before. Our management office will do the best for our resident. We sincerely wish your peace and happiness The Link 345 Thank you.</p>
                     </Row>
                 </Container>
-            </Jumbo>
+            
         </Styles>
     )
 }
 
-export default Background1
+export default Detail
 
