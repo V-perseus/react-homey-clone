@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Background1 from './Background1';
 import Banner from './Banner';
 import Detail from './Detail';
+import Video from './Video';
 
 const Styles = styled.div `
  
@@ -15,6 +16,7 @@ function App() {
       <Banner sticky="top"/>
       <Background1 />
       <Detail />
+      <Video />
     </React.Fragment>
   );
 }
