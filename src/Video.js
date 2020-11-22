@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import styled from 'styled-components';
 import bg1 from './images/bg1.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -14,11 +14,18 @@ const Styles = styled.div`
 `;
 
 
-function Video() {
+function Video(props) {
+
+    const vidRef = useRef(null);
+    const handlePlayVideo = () => {
+        vidRef.current.play();
+    }
+
     return (
         <Styles>
             <Jumbo fluid className="jumbo">
                 <div className="overlay"></div>
+                <video ref="vidRef" src="some.mp4" type="video/mp4"></video>
             </Jumbo>
         </Styles>
     )
