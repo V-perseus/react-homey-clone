@@ -1,31 +1,29 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import bg1 from './images/bg1.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Jumbotron as Jumbo, Container} from 'react-bootstrap';
+import {Jumbotron as Jumbo} from 'react-bootstrap';
+import bg1 from './images/second-background.jpg';
+
 
 
 const Styles = styled.div`
  .jumbo {
-     background : url(${bg1});
-     background-size : 100% 100%;
-     height: 500px;
- }
+        background: url(${bg1}) no-repeat;
+        background-size: 100% 100%;
+        color:yellow;
+        height: 600px;
+        position: relative;
+        z-index: -2;
+    }
 `;
 
 
-function Video(props) {
-
-    const vidRef = useRef(null);
-    const handlePlayVideo = () => {
-        vidRef.current.play();
-    }
+function Video() {
 
     return (
         <Styles>
             <Jumbo fluid className="jumbo">
                 <div className="overlay"></div>
-                <video ref="vidRef" src="some.mp4" type="video/mp4"></video>
             </Jumbo>
         </Styles>
     )
