@@ -9,16 +9,19 @@ import styled from 'styled-components';
 
 
 const Styles = styled.div`
-    .d-block {
-        height: 300px;
-        
+    .carousel-item img{
+        height: 500px;
+    }
+    .carousel-caption h3{
+        color: yellow:
     }
 `;
 
 function ControlledCarousel() {
     
     return (
-        <Container>
+        <Styles>
+            <Container>
             <Carousel>
             <Carousel.Item>
                 <img
@@ -27,8 +30,7 @@ function ControlledCarousel() {
                 alt="First slide"
                 />
                 <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <h3>Entrance</h3>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -39,8 +41,7 @@ function ControlledCarousel() {
                 />
 
                 <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3>First Floor</h3>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -51,8 +52,7 @@ function ControlledCarousel() {
                 />
 
                 <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                <h3>Golf Site</h3>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -63,8 +63,7 @@ function ControlledCarousel() {
                 />
 
                 <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                <h3>Park</h3>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -75,12 +74,13 @@ function ControlledCarousel() {
                 />
 
                 <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                <h3>Gym</h3>
                 </Carousel.Caption>
             </Carousel.Item>
             </Carousel> 
         </Container>
+        </Styles>
+        
         
         )
 }
