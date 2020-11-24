@@ -9,7 +9,7 @@ const Styles = styled.div`
  .jumbo {
      background : url(${bg1});
      background-size : 100% 100%;
-     height: 400px;
+     height: 500px;
  }
 `;
 
