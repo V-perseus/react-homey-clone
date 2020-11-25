@@ -1,17 +1,17 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import{Jumbotron as Jumbo, Container} from 'react-bootstrap';
-import dogImage from './images/dog.png';
+import bg2 from './images/third-background.jpg';
 import styled from 'styled-components';
 import {Row} from 'react-bootstrap'
 
 const Styles = styled.div`
     .jumbo {
-        background: url(${dogImage}) no-repeat;
+        background: url(${bg2}) no-repeat;
         background-size: 100% 100%;
         background-attachment: fixed;
         color:yellow;
-        height: 92vh;
+        height: 50vh;
         position: relative;
         z-index: -2;
     }
@@ -35,7 +35,7 @@ function Background1() {
                 <div className="overlay"></div>
                 <Container>
                     <Row>
-                        <h1 className="text-center">Welcome to Mango Jam's React Homey</h1>
+                        <h1>Welcome to Mango Jam's React Homey</h1>
                     </Row>
                 </Container>
             </Jumbo>
