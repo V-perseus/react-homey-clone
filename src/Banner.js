@@ -22,7 +22,7 @@ const Styles = styled.div`
 function Banner() {
   return (
     <Styles>
-        <Navbar collapseOnSelect expand="lg" variant="dark" className="navbar">
+        <Navbar collapseOnSelect expand="lg" variant="dark" >
           <Container>
             <Navbar.Brand href="#home">Homey</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />

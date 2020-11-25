@@ -1,6 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import{Jumbotron as Jumbo, Container} from 'react-bootstrap';
+import{ Container} from 'react-bootstrap';
 import styled from 'styled-components';
 import {Row} from 'react-bootstrap'
 

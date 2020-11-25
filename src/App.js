@@ -5,7 +5,7 @@ import Banner from './Banner';
 import Detail from './Detail';
 import Video from './Video';
 import Detail1 from './Detail1';
-import Carousel from './Carousel';
+import Gallery from './Gallery';
 import Background2 from './Background2';
 import Detail2 from './Detail2';
 import Map from './Map';
@@ -20,7 +20,7 @@ function App() {
         <Video />
         <Detail1 />
         <Background2 />
-        <Carousel />
+        <Gallery />
         <Detail2 />
         <Map />
     </React.Fragment>
