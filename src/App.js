@@ -9,6 +9,7 @@ import Gallery from './Gallery';
 import Background2 from './Background2';
 import Detail2 from './Detail2';
 import Map from './Map';
+import Footer from './Footer';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Gallery />
         <Detail2 />
         <Map />
+        <Footer />
     </React.Fragment>
   );
 }
