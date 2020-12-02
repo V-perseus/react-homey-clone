@@ -35,7 +35,7 @@ function Background1() {
                 <div className="overlay"></div>
                 <Container>
                     <Row>
-                        <h1 className="text-center">Welcome to Mango Jam's React Homey</h1>
+                        <h1 className="text-center">Welcome to  Homey</h1>
                     </Row>
                 </Container>
             </Jumbo>
