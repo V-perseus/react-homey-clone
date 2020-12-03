@@ -18,7 +18,7 @@ function Detail() {
                             <h1>The Link 345 Location</h1>
                         </Col>
                         <Col md={12}>
-                            <p>Lô đất IC 32, Khu Đô Thị Nam Thăng Long, Tây Hồ, Hà Nội.</p>
+                            <p>Sammie is a gentle man.</p>
                         </Col>
                     </Row>
                 </Container>
