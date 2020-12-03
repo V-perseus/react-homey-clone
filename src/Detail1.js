@@ -15,7 +15,7 @@ function Detail() {
                 <Container>
                     <Row className="row">
                         <h1>The management office in The Link 345</h1>
-                        <p>Please feel free to contact us! The Link 345 is always by your side.</p>
+                        <p>Ladies and gentle men. Please feel free to contact us! The Link 345 is always by your side.</p>
                     </Row>
                 </Container>
             
