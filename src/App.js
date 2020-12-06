@@ -1,33 +1,29 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import Background1 from './Background1';
-import Banner from './Banner';
-import Detail from './Detail';
-import Video from './Video';
-import Detail1 from './Detail1';
-import Gallery from './Gallery';
-import Background2 from './Background2';
-import Detail2 from './Detail2';
-import Map from './Map';
-import Footer from './Footer';
+import Home from './Home';
+import Nav from './Nav';
+import Notification from './Notification';
+import Community from './Community';
+import Facility from './Facility';
+import Suggestion from './Suggestion';
+import Repair from './Repair';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 
 function App() {
   return (
-    <React.Fragment>
-      <Router>
-        <Banner />
-        <Background1 />
-        <Detail />
-        <Video />
-        <Detail1 />
-        <Background2 />
-        <Gallery />
-        <Detail2 />
-        <Map />
-        <Footer />
-      </Router> 
-    </React.Fragment>
+    <Router>
+      <div>
+        <Nav />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/notification" component={Notification} />
+          <Route path="/community" component={Community} />
+          <Route path="/facility" component={Facility} />
+          <Route path="/suggestion" component={Suggestion} />
+          <Route path="/repair" component={Repair} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
