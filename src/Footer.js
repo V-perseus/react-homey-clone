@@ -19,6 +19,9 @@ function Footer() {
                     <Col xs={12} md={6} className="mt-5">
                         <h1>Support</h1>
                     </Col>
+                    <Col xs={12} md={6} className="mt-5">
+                        <h1>Contact</h1>
+                    </Col>
                 </Row>
             </Container>
         </Styles>

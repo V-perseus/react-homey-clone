@@ -15,6 +15,7 @@ import Footer from './Footer';
 function App() {
   return (
     <React.Fragment>
+      <Router>
         <Banner />
         <Background1 />
         <Detail />
@@ -25,6 +26,7 @@ function App() {
         <Detail2 />
         <Map />
         <Footer />
+      </Router> 
     </React.Fragment>
   );
 }
